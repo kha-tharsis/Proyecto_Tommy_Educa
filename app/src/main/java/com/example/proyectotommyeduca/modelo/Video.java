@@ -15,6 +15,10 @@ public class Video {
         this.descripcion = descripcion;
     }
 
+    public Video() {
+
+    }
+
     public int getVideo_id() {
         return video_id;
     }
