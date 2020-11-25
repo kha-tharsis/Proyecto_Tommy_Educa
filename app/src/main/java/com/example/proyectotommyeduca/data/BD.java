@@ -16,6 +16,12 @@ public class BD extends SQLiteOpenHelper{
      *private  String colegio_nombre;
      *private float latitud, longitud;
      */
+    private final String tabla_video = "CREATE TABLE video(" +
+            "video_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "video_titulo TEXT," +
+            "colegio_id_fk INT ," +
+            "codigo TEXT ," +
+            "descripcion TEXT)";
 
     public BD(Context context) {
         super(context, NAME, null, VERSION);
