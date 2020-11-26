@@ -4,44 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Seleccion_de_Videos">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_Title"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Title_Main_Activity"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/tv_Nombre_Colegio"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="--------------"
             android:textAlignment="center"
             android:textSize="30sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="117dp" />
+            android:layout_height="78dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="267dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="297dp"
+                android:layout_height="210dp"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_select"
+                android:id="@+id/tv_Descripcion_Video"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_selec" />
+                android:layout_height="match_parent"
+                android:text="------------"
+                android:textAlignment="center"
+                android:textSize="18sp" />
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="match_parent"
-                android:layout_height="44dp" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="105dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,11 +75,11 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="video" />
+                android:text="Button" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -67,16 +87,29 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="mapa" />
+                android:text="Button" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

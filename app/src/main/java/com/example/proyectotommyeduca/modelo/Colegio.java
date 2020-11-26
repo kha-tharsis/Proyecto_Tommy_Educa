@@ -2,7 +2,7 @@ package com.example.proyectotommyeduca.modelo;
 
 public class Colegio {
     private int colegio_id;
-    private  String colegio_nombre;
+    private String colegio_nombre;
     private float latitud, longitud;
 
     public Colegio() {

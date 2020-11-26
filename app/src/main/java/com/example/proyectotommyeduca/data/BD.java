@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.proyectotommyeduca.modelo.Colegio;
 import com.example.proyectotommyeduca.modelo.Video;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class BD extends SQLiteOpenHelper{
      *private  String colegio_nombre;
      *private float latitud, longitud;
      */
+
     private final String tabla_video = "CREATE TABLE video(" +
             "video_id INTEGER PRIMARY KEY AUTOINCREMENT," +
             "video_titulo TEXT," +
@@ -31,6 +33,9 @@ public class BD extends SQLiteOpenHelper{
     private static final String insertTabla_Video = "INSERT INTO video VALUES(NULL,'Mac Miller - Wings',1,'_O1qD95xnao','temazo');";
     private static final String insertTabla_Video2 = "INSERT INTO video VALUES(NULL,'Final Fantasy 7 - Cloud omnislash vs Sephiroth',2,'3nNqArFMhek','juegazo');";
     private static final String insertTabla_Video3 = "INSERT INTO video VALUES(NULL,'Penal Alexis Sánchez - FINAL Copa América Chile 2015 (Full HD)',3,'Sm0TeXjvNJg','LE PEGOOOO');";
+
+
+    private static final String insert_Tabla_Colegio = "INSERT INTO colegio VALUES(NULL,'Santo Tomas',3,'-34.171627863691526','-70.73630511580164');";
 
     public BD(Context context) {
         super(context, NAME, null, VERSION);
@@ -46,6 +51,9 @@ public class BD extends SQLiteOpenHelper{
         db.execSQL(insertTabla_Video);
         db.execSQL(insertTabla_Video2);
         db.execSQL(insertTabla_Video3);
+
+
+        db.execSQL(insert_Tabla_Colegio);
     }
 
     @Override
@@ -71,5 +79,22 @@ public class BD extends SQLiteOpenHelper{
         return listaVideos;
     }
 
+    public List<Colegio> get_AllColegio(){
+        List<Colegio> listC = new ArrayList<>();
+        String select = "SELECT * FROM colegio;";
+        SQLiteDatabase bd = getReadableDatabase();
+        Cursor cursor = bd.rawQuery(select,null);
+        if(cursor.moveToFirst()){
+            do{
+                Colegio c = new Colegio();
+                c.setColegio_id(cursor.getInt(0));
+                c.setColegio_nombre(cursor.getString(1));
+                c.setLatitud(cursor.getFloat(2));
+                c.setLongitud(cursor.getFloat(3));
+                listC.add(c);
+            }while (cursor.moveToNext());
+        }
+        return listC;
+    }
 
 }

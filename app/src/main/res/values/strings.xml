@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProyectoTommyEduca</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="Title_Main_Activity">TOMY EDUCA</string>
+    <string name="tv_selec">Seleccion el nombre de tú colegio:</string>
+
 </resources>
