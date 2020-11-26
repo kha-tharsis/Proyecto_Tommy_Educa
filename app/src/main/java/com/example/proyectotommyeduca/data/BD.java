@@ -30,12 +30,18 @@ public class BD extends SQLiteOpenHelper{
             "codigo TEXT ," +
             "descripcion TEXT)";
 
+
+    private static final String insert_Tabla_Colegio = "INSERT INTO colegio VALUES(NULL,'Santo Tomas','-34.171627863691526','-70.73630511580164');";
+    private static final String insert_Tabla_Colegio2 = "INSERT INTO colegio VALUES(NULL,'Colegio 2','-34.171627863691526','-70.73630511580164');";
+    private static final String insert_Tabla_Colegio3 = "INSERT INTO colegio VALUES(NULL,'Colegio 3','-34.171627863691526','-70.73630511580164');";
+
     private static final String insertTabla_Video = "INSERT INTO video VALUES(NULL,'Mac Miller - Wings',1,'_O1qD95xnao','temazo');";
     private static final String insertTabla_Video2 = "INSERT INTO video VALUES(NULL,'Final Fantasy 7 - Cloud omnislash vs Sephiroth',2,'3nNqArFMhek','juegazo');";
     private static final String insertTabla_Video3 = "INSERT INTO video VALUES(NULL,'Penal Alexis Sánchez - FINAL Copa América Chile 2015 (Full HD)',3,'Sm0TeXjvNJg','LE PEGOOOO');";
 
 
-    private static final String insert_Tabla_Colegio = "INSERT INTO colegio VALUES(NULL,'Santo Tomas',3,'-34.171627863691526','-70.73630511580164');";
+
+
 
     public BD(Context context) {
         super(context, NAME, null, VERSION);
@@ -47,22 +53,26 @@ public class BD extends SQLiteOpenHelper{
         db.execSQL(tabla_colegio);
         db.execSQL(tabla_video);
 
+        db.execSQL(insert_Tabla_Colegio);
+        db.execSQL(insert_Tabla_Colegio2);
+        db.execSQL(insert_Tabla_Colegio3);
+
 
         db.execSQL(insertTabla_Video);
         db.execSQL(insertTabla_Video2);
         db.execSQL(insertTabla_Video3);
 
 
-        db.execSQL(insert_Tabla_Colegio);
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         System.out.println("======== UPGRADE =========");
     }
-    public List<Video> getAllVideos(){
+    public List<Video> getVideosPorId(int id){
         List<Video> listaVideos = new ArrayList<>();
-        String select = "SELECT * FROM video;";
+        String select = "SELECT * FROM video WHERE colegio_id_fk =" +id+";";
         SQLiteDatabase bd = getReadableDatabase();
         Cursor cursor = bd.rawQuery(select,null);
         if(cursor.moveToFirst()){

@@ -46,4 +46,9 @@ public class Colegio {
     public void setLongitud(float longitud) {
         this.longitud = longitud;
     }
+
+    @Override
+    public String toString() {
+        return colegio_nombre;
+    }
 }
