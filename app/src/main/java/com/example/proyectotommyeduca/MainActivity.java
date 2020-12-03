@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import com.example.proyectotommyeduca.data.BD;
@@ -16,7 +17,7 @@ import com.example.proyectotommyeduca.modelo.Colegio;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btn_Video,btn_Mapa;
+    private ImageButton btn_Video,btn_Mapa;
     private Spinner spinner_Colegio;
     private Adapter adapter_Colegio;
     private ArrayAdapter<Colegio> adapterColegio;

@@ -74,36 +74,39 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/button6"
+            <ImageButton
+                android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:backgroundTint="@color/common_google_signin_btn_tint"
+                app:srcCompat="@drawable/back" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/button7"
+            <ImageButton
+                android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:backgroundTint="@color/common_google_signin_btn_tint"
+                app:srcCompat="@drawable/icons8_youtube_play_64" />
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/button8"
+            <ImageButton
+                android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:backgroundTint="@color/common_google_signin_btn_tint"
+                app:srcCompat="@drawable/next" />
 
             <Space
                 android:layout_width="wrap_content"
