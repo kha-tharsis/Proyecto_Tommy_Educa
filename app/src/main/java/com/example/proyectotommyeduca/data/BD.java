@@ -70,9 +70,9 @@ public class BD extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         System.out.println("======== UPGRADE =========");
     }
-    public List<Video> getVideosPorId(int id){
+    public List<Video> getAllVideos(){
         List<Video> listaVideos = new ArrayList<>();
-        String select = "SELECT * FROM video WHERE colegio_id_fk =" +id+";";
+        String select = "SELECT * FROM video;";
         SQLiteDatabase bd = getReadableDatabase();
         Cursor cursor = bd.rawQuery(select,null);
         if(cursor.moveToFirst()){

@@ -3,6 +3,7 @@ package com.example.proyectotommyeduca;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -25,12 +26,22 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
     }
 
     @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean res) {
+        if(!res){
+            youTubePlayer.cueVideo(Seleccion_de_Videos.videoSeleccionado.getCodigo());
+        }else{
+            System.out.println("----Restaurado----");
+        }
     }
 
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-
+        if(youTubeInitializationResult.isUserRecoverableError()){
+            youTubeInitializationResult.getErrorDialog(this,1).show();
+        }else{
+            String error = "Error Desconocido" + youTubeInitializationResult.toString();
+            System.out.println(error);
+            Toast.makeText(getApplicationContext(),error,Toast.LENGTH_LONG).show();
+        }
     }
 }

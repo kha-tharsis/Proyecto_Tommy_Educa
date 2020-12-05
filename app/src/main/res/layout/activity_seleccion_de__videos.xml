@@ -16,7 +16,7 @@
             android:layout_height="26dp" />
 
         <TextView
-            android:id="@+id/tv_Nombre_Colegio"
+            android:id="@+id/tv_titulo"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:text="--------------"
@@ -41,7 +41,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="297dp"
                 android:layout_height="210dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                />
 
             <Space
                 android:layout_width="wrap_content"
@@ -75,7 +76,7 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButtonRetroceder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -88,7 +89,7 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/imageButtonReproducir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -101,7 +102,7 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/imageButtonAvanzar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
