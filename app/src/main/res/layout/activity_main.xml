@@ -35,17 +35,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_select"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_selec" />
-
-            <Spinner
-                android:id="@+id/spinner_Colegio"
-                android:layout_width="match_parent"
-                android:layout_height="44dp" />
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="105dp" />
@@ -135,7 +124,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="35dp" />
+                android:layout_height="68dp" />
 
         </LinearLayout>
     </LinearLayout>
