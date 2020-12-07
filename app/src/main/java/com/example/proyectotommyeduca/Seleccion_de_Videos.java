@@ -96,6 +96,23 @@ public class Seleccion_de_Videos extends AppCompatActivity {
         text_titulo.setText(video.getTitulo());
         text_descripcion.setText(video.getDescripcion());
         videoSeleccionado = video;
+        enviarImagenporId(video.getVideo_id());
+
+    }
+    private void enviarImagenporId(int id){
         imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+        switch(id) {
+            case 1:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+                break;
+            case 2:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video2);
+                break;
+            case 3:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
+                break;
+            default:
+                break;
+        }
     }
 }
