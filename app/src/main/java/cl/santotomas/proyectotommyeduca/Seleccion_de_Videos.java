@@ -1,4 +1,4 @@
-package com.example.proyectotommyeduca;
+package cl.santotomas.proyectotommyeduca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.proyectotommyeduca.data.BD;
-import com.example.proyectotommyeduca.modelo.Video;
+import com.example.proyectotommyeduca.R;
+
+import cl.santotomas.proyectotommyeduca.data.BD;
+import cl.santotomas.proyectotommyeduca.modelo.Video;
 
 import java.util.List;
 

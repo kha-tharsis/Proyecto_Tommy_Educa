@@ -1,9 +1,10 @@
-package com.example.proyectotommyeduca;
+package cl.santotomas.proyectotommyeduca;
 
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
+import com.example.proyectotommyeduca.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

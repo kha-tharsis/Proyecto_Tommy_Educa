@@ -1,10 +1,10 @@
-package com.example.proyectotommyeduca.data;
+package cl.santotomas.proyectotommyeduca.data;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.proyectotommyeduca.modelo.Video;
+import cl.santotomas.proyectotommyeduca.modelo.Video;
 
 import java.util.ArrayList;
 import java.util.List;

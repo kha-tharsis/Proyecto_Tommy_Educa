@@ -1,4 +1,4 @@
-package com.example.proyectotommyeduca;
+package cl.santotomas.proyectotommyeduca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.proyectotommyeduca.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton btn_Video,btn_Mapa;

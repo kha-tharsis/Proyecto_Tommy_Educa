@@ -1,10 +1,9 @@
-package com.example.proyectotommyeduca;
-
-import androidx.appcompat.app.AppCompatActivity;
+package cl.santotomas.proyectotommyeduca;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.proyectotommyeduca.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;

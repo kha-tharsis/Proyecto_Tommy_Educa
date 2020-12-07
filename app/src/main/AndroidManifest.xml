@@ -16,8 +16,8 @@
         android:roundIcon="@mipmap/ic_logo_tomyeduca_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Seleccion_de_Videos"></activity>
-        <activity android:name=".YouTube" />
+        <activity android:name="cl.santotomas.proyectotommyeduca.Seleccion_de_Videos"></activity>
+        <activity android:name="cl.santotomas.proyectotommyeduca.YouTube" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,9 +31,9 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="cl.santotomas.proyectotommyeduca.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".MainActivity">
+        <activity android:name="cl.santotomas.proyectotommyeduca.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

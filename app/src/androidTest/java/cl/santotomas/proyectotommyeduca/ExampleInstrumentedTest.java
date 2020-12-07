@@ -1,4 +1,4 @@
-package com.example.proyectotommyeduca;
+package cl.santotomas.proyectotommyeduca;
 
 import android.content.Context;
 
