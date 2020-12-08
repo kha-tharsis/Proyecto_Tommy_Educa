@@ -9,8 +9,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import cl.santotomas.tomyeduca.R;
-
 import cl.santotomas.tomyeduca.data.BD;
 import cl.santotomas.tomyeduca.modelo.Video;
 
@@ -108,7 +106,7 @@ public class Seleccion_de_Videos extends AppCompatActivity {
                 imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
                 break;
             case 2:
-                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video2);
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video);
                 break;
             case 3:
                 imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
