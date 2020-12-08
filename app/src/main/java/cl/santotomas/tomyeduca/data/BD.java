@@ -30,7 +30,6 @@ public class BD extends SQLiteOpenHelper{
 
 
     private static final String insertTabla_Video = "INSERT INTO video VALUES(NULL,'Mac Miller - Wings',1,'_O1qD95xnao','temazo');";
-    private static final String insertTabla_Video2 = "INSERT INTO video VALUES(NULL,'Final Fantasy 7 - Cloud omnislash vs Sephiroth',2,'3nNqArFMhek','juegazo');";
     private static final String insertTabla_Video3 = "INSERT INTO video VALUES(NULL,'Penal Alexis Sánchez - FINAL Copa América Chile 2015 (Full HD)',3,'Sm0TeXjvNJg','LE PEGOOOO');";
 
 
@@ -47,7 +46,6 @@ public class BD extends SQLiteOpenHelper{
 
         db.execSQL(tabla_video);
         db.execSQL(insertTabla_Video);
-        db.execSQL(insertTabla_Video2);
         db.execSQL(insertTabla_Video3);
 
 
