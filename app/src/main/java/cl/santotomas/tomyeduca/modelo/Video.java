@@ -3,14 +3,12 @@ package cl.santotomas.tomyeduca.modelo;
 public class Video {
     private int video_id;
     private String titulo;
-    private int colegio_id_fk;
     private String codigo;
     private String descripcion;
 
-    public Video(int video_id, String titulo, int colegio_id_fk, String codigo, String descripcion) {
+    public Video(int video_id, String titulo, String codigo, String descripcion) {
         this.video_id = video_id;
         this.titulo = titulo;
-        this.colegio_id_fk = colegio_id_fk;
         this.codigo = codigo;
         this.descripcion = descripcion;
     }
@@ -33,14 +31,6 @@ public class Video {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    public int getColegio_id_fk() {
-        return colegio_id_fk;
-    }
-
-    public void setColegio_id_fk(int colegio_id_fk) {
-        this.colegio_id_fk = colegio_id_fk;
     }
 
     public String getCodigo() {

@@ -111,6 +111,42 @@ public class Seleccion_de_Videos extends AppCompatActivity {
             case 3:
                 imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
                 break;
+            case 4:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+                break;
+            case 5:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video);
+                break;
+            case 6:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
+                break;
+            case 7:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+                break;
+            case 8:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video);
+                break;
+            case 9:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
+                break;
+            case 10:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+                break;
+            case 11:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video);
+                break;
+            case 12:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
+                break;
+            case 13:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video1);
+                break;
+            case 14:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video);
+                break;
+            case 15:
+                imagenVideo = (ImageView) findViewById(R.id.imageView); imagenVideo.setImageResource(R.drawable.video3);
+                break;
             default:
                 break;
         }
