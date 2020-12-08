@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.proyectotommyeduca.R;
+import cl.santotomas.tomyeduca.R;
 
 import cl.santotomas.tomyeduca.data.BD;
 import cl.santotomas.tomyeduca.modelo.Video;
