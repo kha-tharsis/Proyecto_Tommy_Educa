@@ -1,4 +1,4 @@
-package cl.santotomas.proyectotommyeduca;
+package cl.santotomas.tomyeduca;
 
 import android.os.Bundle;
 import android.widget.Toast;

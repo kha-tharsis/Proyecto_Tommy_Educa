@@ -1,4 +1,4 @@
-package cl.santotomas.proyectotommyeduca;
+package cl.santotomas.tomyeduca;
 
 import org.junit.Test;
 

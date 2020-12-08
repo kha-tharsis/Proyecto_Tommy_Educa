@@ -1,4 +1,4 @@
-package cl.santotomas.proyectotommyeduca.modelo;
+package cl.santotomas.tomyeduca.modelo;
 
 public class Video {
     private int video_id;

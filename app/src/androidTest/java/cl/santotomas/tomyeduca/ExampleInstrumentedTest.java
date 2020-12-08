@@ -1,4 +1,4 @@
-package cl.santotomas.proyectotommyeduca;
+package cl.santotomas.tomyeduca;
 
 import android.content.Context;
 

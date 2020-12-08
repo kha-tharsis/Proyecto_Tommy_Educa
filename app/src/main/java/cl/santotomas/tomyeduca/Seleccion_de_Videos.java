@@ -1,4 +1,4 @@
-package cl.santotomas.proyectotommyeduca;
+package cl.santotomas.tomyeduca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import com.example.proyectotommyeduca.R;
 
-import cl.santotomas.proyectotommyeduca.data.BD;
-import cl.santotomas.proyectotommyeduca.modelo.Video;
+import cl.santotomas.tomyeduca.data.BD;
+import cl.santotomas.tomyeduca.modelo.Video;
 
 import java.util.List;
 

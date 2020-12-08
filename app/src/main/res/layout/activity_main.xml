@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
-    tools:context="cl.santotomas.proyectotommyeduca.MainActivity">
+    tools:context="cl.santotomas.tomyeduca.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
