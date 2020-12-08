@@ -13,11 +13,7 @@ public class BD extends SQLiteOpenHelper{
     private static String NAME = "bd_Videos";
     private static int VERSION = 1;
 
-    /*      Colegio
-     *private int colegio_id;
-     *private  String colegio_nombre;
-     *private float latitud, longitud;
-     */
+
 
     private final String tabla_video = "CREATE TABLE video(" +
             "video_id INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -30,6 +26,7 @@ public class BD extends SQLiteOpenHelper{
 
 
     private static final String insertTabla_Video = "INSERT INTO video VALUES(NULL,'Mac Miller - Wings',1,'_O1qD95xnao','temazo');";
+    private static final String insertTabla_Video1 = "INSERT INTO video VALUES(NULL,'Opening Santo Tomas Extendido',2,'RJX1UIbT0OM','otro temazo');";
     private static final String insertTabla_Video3 = "INSERT INTO video VALUES(NULL,'Penal Alexis Sánchez - FINAL Copa América Chile 2015 (Full HD)',3,'Sm0TeXjvNJg','LE PEGOOOO');";
 
 
@@ -46,6 +43,7 @@ public class BD extends SQLiteOpenHelper{
 
         db.execSQL(tabla_video);
         db.execSQL(insertTabla_Video);
+        db.execSQL(insertTabla_Video1);
         db.execSQL(insertTabla_Video3);
 
 

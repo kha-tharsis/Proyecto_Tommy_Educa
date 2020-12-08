@@ -41,8 +41,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="297dp"
                 android:layout_height="210dp"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
 
             <Space
                 android:layout_width="wrap_content"
