@@ -46,9 +46,6 @@ public class BD extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(tabla_video);
-
-
-
         db.execSQL(insertTabla_Video);
         db.execSQL(insertTabla_Video2);
         db.execSQL(insertTabla_Video3);

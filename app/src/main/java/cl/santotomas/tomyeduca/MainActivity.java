@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.proyectotommyeduca.R;
+import cl.santotomas.tomyeduca.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton btn_Video,btn_Mapa;
